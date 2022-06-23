@@ -1,0 +1,36 @@
+.portfolio {
+    background-color: var(--primary-white-color);
+
+    &__filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &__button {
+        padding: 6px 22px;
+        display: inline-block;
+        min-width: 73px;
+        border-radius: 4px;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.03em;
+        background-color: var(--bc-color-team-and-filter);
+        color: var(--primery-text-color);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__button:hover,
+    &__button:focus {
+        background-color: var(--accent-text);
+        color: var(--primary-white-color);
+    }
+}

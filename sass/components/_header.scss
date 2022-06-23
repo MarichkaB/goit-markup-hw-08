@@ -1,0 +1,106 @@
+.header {
+    border-bottom: 1px solid var(--border-bottom-header-color);
+
+    &__section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+        align-items: center;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--color-web-studio);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    &__logo-web {
+        color: var(--accent-text);
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--primery-text-color);
+
+        &--current,
+        &:hover,
+        &:focus {
+            color: var(--accent-text);
+            fill: var(--accent-text);
+        }
+    }
+
+    &__link--current::after {
+        display: block;
+        content: "";
+        position: absolute;
+        background-color: var(--accent-text);
+        bottom: -1px;
+        left: 0px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__adress-link {
+        color: var(--title-text-color);
+        fill: var(--title-text-color);
+    }
+
+    &__contact {
+        margin-left: auto;
+    }
+
+    &__adress-link:hover,
+    &__adress-link:focus {
+        color: var(--accent-text);
+        fill: var(--accent-text);
+    }
+
+    &__nav,
+    &__contact {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link,
+    &__adress-link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__menu &__item:not(:last-child),
+    &__contact &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__contact-icon {
+        margin-right: 10px;
+        content: "";
+        height: 100%;
+        background-size: contain;
+        align-items: center;
+        justify-content: center;
+    }
+}
