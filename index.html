@@ -190,9 +190,13 @@
             <li class="work__item">
               <img
                 src="./images/box1.jpg"
+                srcset="
+                    ./images/work/work1.jpg    370w,
+                    ./images/work/work1-2x.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  width="370"
                 alt="пишем код"
-                width="370"
-                height="294"
               />
               <div class="work__text">
                 <p>Десктопные приложения</p>
@@ -201,9 +205,13 @@
             <li class="work__item">
               <img
                 src="./images/box2.jpg"
+                srcset="
+                    ./images/work/work2.jpg    370w,
+                    ./images/work/work2-2x.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  width="370"
                 alt="сидим в телефоне"
-                width="370"
-                height="294"
               />
               <div class="work__text">
                 <p>Мобильные приложения</p>
@@ -212,9 +220,13 @@
             <li class="work__item">
               <img
                 src="./images/box3.jpg"
+                srcset="
+                    ./images/work/work3.jpg    370w,
+                    ./images/work/work3-2x.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  width="370"
                 alt="рисуем"
-                width="370"
-                height="294"
               />
               <div class="work__text">
                 <p>Дизайнерские решения</p>
@@ -231,12 +243,34 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="team-box">
-                <img
-                  src="./images/igor.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/human1-desktop.jpg    1x,
+                      ./images/team/human1-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human1-tablet.jpg    1x,
+                      ./images/team/human1-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human1-mobile.jpg    1x,
+                      ./images/team/human1-mobile-2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    src="./images/team/human1-mobile.jpg"
+                    width="450"
+                    alt="Игорь"
+                  />
+                </picture>
                 <div class="team__names">
                   <h3 class="team-box__worker">Игорь Демьяненко</h3>
                   <p class="team-box__position">Product Designer</p>
@@ -279,12 +313,34 @@
             </li>
             <li class="team__item">
               <div class="team-box">
-                <img
-                  src="./images/olga.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/human2-desktop.jpg    1x,
+                      ./images/team/human2-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human2-tablet.jpg    1x,
+                      ./images/team/human2-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human2-mobile.jpg    1x,
+                      ./images/team/human2-mobile-2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    src="./images/team/human2-mobile.jpg"
+                    width="450"
+                    alt="Ольга"
+                  />
+                </picture>
                 <div class="team__names">
                   <h3 class="team-box__worker">Ольга Репина</h3>
                   <p class="team-box__position">Frontend Developer</p>
@@ -327,12 +383,34 @@
             </li>
             <li class="team__item">
               <div class="team-box">
-                <img
-                  src="./images/nikolay.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/human3-desktop.jpg    1x,
+                      ./images/team/human3-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human3-tablet.jpg    1x,
+                      ./images/team/human3-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human3-mobile.jpg    1x,
+                      ./images/team/human3-mobile-2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    src="./images/team/human3-mobile.jpg"
+                    width="450"
+                    alt="Николай"
+                  />
+                </picture>
                 <div class="team__names">
                   <h3 class="team-box__worker">Николай Тарасов</h3>
                   <p class="team-box__position">Marketing</p>
@@ -375,12 +453,34 @@
             </li>
             <li class="team__item">
               <div class="team-box">
-                <img
-                  src="./images/mihail.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/human4-desktop.jpg    1x,
+                      ./images/team/human4-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human4-tablet.jpg    1x,
+                      ./images/team/human4-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/human4-mobile.jpg    1x,
+                      ./images/team/human4-mobile-2x.jpg 2x
+                    "
+                    media="(min-width:480px)"
+                  />
+                  <img
+                    src="./images/team/person4-mobile.jpg"
+                    width="450"
+                    alt="Михаил"
+                  />
+                </picture>
                 <div class="team__names">
                   <h3 class="team-box__worker">Михаил Ермаков</h3>
                   <p class="team-box__position">UI Designer</p>
